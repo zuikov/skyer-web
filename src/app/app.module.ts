@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../../src/material-module';
 import { LandingComponent } from './components/landing/landing.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ShowroomComponent } from './components/showroom/showroom.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    DashboardComponent
+    DashboardComponent,
+    ShowroomComponent
   ],
   imports: [
     BrowserModule,
