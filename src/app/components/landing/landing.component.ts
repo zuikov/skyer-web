@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class LandingComponent implements OnInit {
   
   screenWidth: number;
+  showFiller: boolean;
 
   // @Output() public sidenavToggle = new EventEmitter();
 
