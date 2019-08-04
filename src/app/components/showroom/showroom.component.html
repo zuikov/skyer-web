@@ -1,2 +1,14 @@
-<p>showroom works!</p>
-<div #rendererContainer></div>
+<div class="container">
+    <div class="content">
+        <img class="image" src="/assets/img/{{imageId}}.jpg" alt="{{imageId}}">
+    </div>
+        <mat-card class="navigation">
+            <button mat-raised-button color="primary" (click)="setImageId('skyer-cabin-closed')">close cabin</button>
+            <button mat-raised-button color="primary" (click)="setImageId('skyer-cabin-opened')">open cabin</button>
+            <button mat-raised-button color="primary" (click)="setImageId('skyer-cabin-opened-with-step')">unfold step</button>
+            <button mat-raised-button color="primary" (click)="setImageId('skyer-cabin-closed-comparison')">see scale</button>
+        </mat-card>
+    <div class="content">
+        <video class="video" src="/assets/video/jet-animation-MainConcept-Internet720p.mp4" controls></video>
+    </div>
+</div>

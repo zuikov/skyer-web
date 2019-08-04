@@ -1,7 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
-// @import '@angular/material/prebuilt-themes/purple-green.css';
-
 @import "../src/skyer-theme.scss";
 
 html, body { 
@@ -9,12 +6,22 @@ html, body {
   margin: 0;
   height: 100%;
 }
-
-.basic-container {
-  padding: 30px;
+button {
+  margin: 5px!important;
+  width: 140px;
 }
-
-.version-info {
-  font-size: 8pt;
-  float: right;
+a {
+  text-decoration: none;
+  color: #7d7d7e;
+  margin: 5px;
+}
+a:hover, a:active{
+  color: #619f46;
+}
+p {
+  color: #9f9f9f;
+  margin: 5px;
+}
+h4 {
+  color: #9f9f9f;
 }

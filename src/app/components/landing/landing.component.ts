@@ -10,13 +10,9 @@ export class LandingComponent implements OnInit {
   screenWidth: number;
   showFiller: boolean;
 
-  // @Output() public sidenavToggle = new EventEmitter();
-
   constructor() {
-    // set screenWidth on page load
     this.screenWidth = window.innerWidth;
     window.onresize = () => {
-    // set screenWidth on screen size change
     this.screenWidth = window.innerWidth;
     };
    }
@@ -24,9 +20,4 @@ export class LandingComponent implements OnInit {
   ngOnInit() {
   }
   
-  // public onToggleSidenav = () => {
-  //   this.sidenavToggle.emit();
-  //   console.log('onToggleSidenav works !');
-  // }
-
 }

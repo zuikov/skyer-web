@@ -8,13 +8,15 @@ import { MaterialModule } from '../../src/material-module';
 import { LandingComponent } from './components/landing/landing.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShowroomComponent } from './components/showroom/showroom.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     DashboardComponent,
-    ShowroomComponent
+    ShowroomComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

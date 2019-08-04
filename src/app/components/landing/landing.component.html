@@ -1,73 +1,55 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
     <app-dashboard (sidenavToggle)="sidenav.toggle()"></app-dashboard>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
+  <div>
     <mat-toolbar color="primary">
-      <span>
-        <mat-icon>mood</mat-icon>
-      </span>
-      <span>Main actions panel</span>
-
-      <button mat-icon-button [mat-menu-trigger-for]="menu">
-        <mat-icon>more_vert</mat-icon>
+      <button mat-raised-button color="secondary" (click)="drawer.toggle()">
+        specifications
       </button>
-      <!-- <button mat-icon-button (click)="onToggleSidenav()"> -->
-      <button mat-icon-button>
-        <mat-icon>menu</mat-icon>
-      </button>
-
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
-
       <div [ngStyle]="{'display' : (screenWidth > 840) ? 'none' : 'block'}">
-        <button type="button" md-button (click)="sidenav.open()">
-          Toggle sidenav when display is block
+        <button mat-raised-button color="secondary" (click)="sidenav.open()">
+          see description
         </button>
       </div>
-
     </mat-toolbar>
-
-    <mat-menu x-position="before" #menu="matMenu">
-      <button mat-menu-item>Option 1</button>
-      <button mat-menu-item>Option 2</button>
-    </mat-menu>
-
-    <mat-card>
-      <button mat-button>All</button>
-      <button mat-raised-button>Of</button>
-      <button mat-raised-button color="primary">The</button>
-      <button mat-raised-button color="accent">Buttons</button>
-    </mat-card>
-
-    <span class="done">
-      <button mat-fab>
-        <mat-icon>check circle</mat-icon>
-      </button>
-    </span>
-
-    <mat-sidenav-container class="sidenav-info">
+    <mat-sidenav-container>
       <mat-sidenav #sidenav role="navigation" [opened]="screenWidth > 840"
         [mode]="(screenWidth > 840) ? 'side' : 'over'">
         <mat-nav-list>
-          <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <p><span>Skyer</span> is all-electric aircraft and has following features:</p>
+          <ul fxLayout fxLayoutGap="30px" class="navigation-items" color="secondary">
             <li>
-              <a routerLink="/owner">Owner Actions</a>
+              <p>vertical takeoff and landing</p>
             </li>
             <li>
-              <a routerLink="/account">Account Actions</a>
+              <p>reduced takeoff and landing</p>
+            </li>
+            <li>
+              <p>variable-pitch ducted fan engins</p>
+            </li>
+            <li>
+              <p>electrical main motor-wheels for takeoff acceleration</p>
+            </li>
+            <li>
+              <p>electrical open/close cabin operations</p>
+            </li>
+            <li>
+              <p>electrical adjustment for pilot seat position</p>
+            </li>
+            <li>
+              <p>low drag</p>
+            </li>
+            <li>
+              <p>high long range cruise speed</p>
+            </li>
+            <li>
+              <p>BRS full aircraft recovery system</p>
             </li>
           </ul>
         </mat-nav-list>
       </mat-sidenav>
-
       <mat-sidenav-content>
         <main>
           <app-showroom></app-showroom>
@@ -75,5 +57,6 @@
         </main>
       </mat-sidenav-content>
     </mat-sidenav-container>
+    <app-footer></app-footer>
   </div>
 </mat-drawer-container>

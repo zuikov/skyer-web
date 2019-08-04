@@ -1,0 +1,22 @@
+.navigation-items{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+.navigation-items li{
+    border-bottom: 1px solid #515256;
+}
+span{
+    color: #b5b5b9;  
+}
+p {
+    color: #7d7d7e;
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+.value{
+    display: flex;
+    justify-content: flex-end;
+}

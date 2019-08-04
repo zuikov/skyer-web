@@ -7,16 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  // @Output() public sidenavToggle = new EventEmitter();
-
   constructor() { }
 
   ngOnInit() {
   }
-
-  // public onToggleSidenav = () => {
-  //   this.sidenavToggle.emit();
-  //   console.log('onToggleSidenav works !');
-  // }
 
 }
